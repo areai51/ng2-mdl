@@ -3,13 +3,13 @@ import {Component, Input} from 'angular2/core';
 @Component({
     selector: 'mdl-card',
     template: `
-
-    <div [style.width]="card.card_width" class="mdl-card mdl-shadow--2dp">
+    <div class="{{card?.width}} {{card?.shadow}}">
   <div [style.backgroundColor]="card.card_background_color"  class="mdl-card__title">
     <h2 class="mdl-card__title-text">{{card?.title}}</h2>
   </div>
   <div class="mdl-card__supporting-text">
     {{card?.body}}
+
 
   </div>
   <div class="mdl-card__actions mdl-card--border">
@@ -28,7 +28,7 @@ import {Component, Input} from 'angular2/core';
 
     styles:[`
       .demo-card-wide.mdl-card {
-      width: {{card?.card_width}};
+
     }
     .demo-card-wide > .mdl-card__title {
       color: #ccc;
@@ -43,6 +43,7 @@ import {Component, Input} from 'angular2/core';
 })
 export class CardComponent {
 	@Input() card
+
 
   //card:string='';
 }
