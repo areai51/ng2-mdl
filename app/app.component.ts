@@ -22,7 +22,7 @@ import {PaperDirective} from './paper.directive'
 <hr/>
 <h2>Menu</h2>
 <div class="container mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="position:relative; height:350px">
-<div class="bar" style="position:absolute; right:5px; border: thin solid #f00 ">
+<div class="bar" style="position:absolute; right:5px;">
 <mdl-menu [menu]="menu"></mdl-menu>
 </div>
 </div>
