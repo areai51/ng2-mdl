@@ -23,12 +23,11 @@ import {PaperDirective} from './paper.directive'
 <h2>Menu</h2>
 <div class="container mdl-shadow--2dp" style="width:250px; position:relative; height:350px">
 <div class="bar">
-<mdl-menu></mdl-menu>
+<mdl-menu [menu]="menu"></mdl-menu>
 </div>
 </div>
 <hr/>
-<div mdl-paper> paper directive</div>
-<span mdl-paper>dfdfgdfgfd</span>
+
 
 <hr/>
 
@@ -56,5 +55,15 @@ printtip:Object={
 "icon":"print",
 "message":" Click here to Print"
 }
+
+menu:Object={
+
+  "links":[
+    {"name":"Yahoo","url":"http://www.yahoo.com"},
+    {"name":"Google","url":"http://www.google.com"},
+    {"name":"Medium","url":"http://www.medium.com"}
+  ]
+}
+
 
 }
