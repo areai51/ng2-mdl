@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 import {CardComponent} from './card.component'
 import {TooltipComponent} from './tooltip.component'
 import {MenuComponent} from './menu.component'
