@@ -11,7 +11,7 @@ import {Component, Input} from '@angular/core';
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
         for="menuBtn">
 
-        <li *ngFor="#item of menu.links" class="mdl-menu__item">
+        <li *ngFor=" let item of menu.links" class="mdl-menu__item">
         <a href="{{item.url}}" >{{item.name}}</a></li>
 
 
